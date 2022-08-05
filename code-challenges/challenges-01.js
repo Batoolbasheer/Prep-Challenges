@@ -11,8 +11,12 @@
 //  Output: 78
 
 const findMax = (arr) => {
-  let max;
-  // write your code here
+  let max =0;
+  for (let i=0; i<arr.length; i+=1) {
+    if (arr[i] > highest) {
+      highest = arr[i];
+    }
+  }
   return max;
 };
 // --------------------------------------------------------------------------------------------------------
@@ -27,10 +31,13 @@ const findMax = (arr) => {
 //  Input: [20, '234', 'car', 41, 20, 'chair']
 //  Output: 81
 const sumNums = (arr) => {
-  let sum;
-  // write your code here
+  let sum=0;
+  
+  for ( let i=0; i<arr.length; i+=1){
+    if(i= number){
+    sum += arr[i]
+   }
+  }
   return sum;
 };
 // -------------------------------------------------------------------------------------------------------
-
-module.exports = { findMax, sumNums };
