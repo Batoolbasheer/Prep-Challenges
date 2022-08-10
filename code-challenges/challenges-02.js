@@ -10,6 +10,8 @@
 
 const reverseArray = (arr) => {
   // write your code here
+  let reverseArray =arr.slice(0, arr.length).reverse()
+  console.log(reverseArray)
 };
 
 // -------------------------------------------------------------------------------------------------------
@@ -25,10 +27,17 @@ const reverseArray = (arr) => {
 
 const arrInc = (arr) => {
   const result = [];
-  // write your code here
+  let i =0;
+for (let i=0; i<arr.length; i+=1) {
+  i=i+10
+  }
   return result;
-};
+}
+
 
 // -------------------------------------------------------------------------------------------------------
 
 module.exports = { reverseArray, arrInc };
+
+
+  

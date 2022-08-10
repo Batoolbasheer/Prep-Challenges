@@ -10,14 +10,15 @@
 //  Input: [12, 32, 22, 45, 78, 12, 50]
 //  Output: 78
 
-const findMax = (arr) => {
-  let max =0;
-  for (let i=0; i<arr.length; i+=1) {
-    if (arr[i] > highest) {
-      highest = arr[i];
-    }
+
+const reverseArray = (arr) => {
+  let arr2=[];
+  for(let i =arr.length-1;i>=0;i--)
+  {
+    arr2.push(arr[i]);
+
   }
-  return max;
+  return arr2;
 };
 // --------------------------------------------------------------------------------------------------------
 
@@ -30,14 +31,16 @@ const findMax = (arr) => {
 //
 //  Input: [20, '234', 'car', 41, 20, 'chair']
 //  Output: 81
-const sumNums = (arr) => {
-  let sum=0;
-  
-  for ( let i=0; i<arr.length; i+=1){
-    if(i= number){
-    sum += arr[i]
-   }
+
+
+const arrInc = (arr) => {
+  const result = [];
+  let x=0;
+  for(let i=0; x < arr.length;x++)
+  {
+x=arr[i]+10;
+result.push(x);
   }
-  return sum;
+  return result;
 };
 // -------------------------------------------------------------------------------------------------------
